@@ -65,3 +65,6 @@ export const remove = (id,history)=>{
         })
     }
 };
+export const showContact = (contact) => {
+    return {type: SHOW_CONTACT, contact}
+};
