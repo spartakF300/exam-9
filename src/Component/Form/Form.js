@@ -65,7 +65,7 @@ const defaultImg = 'https://img.favpng.com/7/5/8/computer-icons-font-awesome-use
             </div>
             <ModalFooter>
                 <Button color="secondary" onClick={()=>props.addContact(value, props.history,props.id ? props.id:null)} >{props.id ?'Save':'Create contact'}</Button>
-                <Button tag={} to="/" className="bg-info" onClick={props.closed} >Back to contacts</Button>
+                <Button tag={BrowserLink} to="/" className="bg-info" onClick={props.closed} >Back to contacts</Button>
             </ModalFooter>
         </Modal>
         </div>
