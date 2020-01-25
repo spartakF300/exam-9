@@ -1,0 +1,15 @@
+.modal-wrap{
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    overflow: hidden;
+}
+.modal-img {
+    width: 100%;
+    height: auto;
+}
+.list-info{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}

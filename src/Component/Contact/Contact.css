@@ -1,0 +1,19 @@
+.img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.wrap-card{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-style: italic;
+    margin: 10px auto;
+    width: 60%;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 6px rgba(0,0,0,0.36);
+}
+.wrap-card:hover{
+    background-color: goldenrod;
+}

@@ -1,26 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
+
 import './App.css';
+import {Route, Switch} from "react-router";
+import Contacts from "./Container/Contacts/Contacts";
+import Header from "./Component/Header/Header";
+import AddContact from "./Container/AddContact/AddContact";
+import Edit from "./Container/Edit/Edit";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <Header/>
+            <Switch>
+                <Route path="/" exact component={Contacts}/>
+                <Route path="/addContact" component={AddContact}/>
+                <Route path="/edit/:id" component={Edit}/>
+            </Switch>
+        </div>
+    );
 }
 
 export default App;
