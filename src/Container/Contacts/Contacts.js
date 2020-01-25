@@ -17,7 +17,6 @@ class Contacts extends Component {
         return (
             <div>
                 {this.props.contacts && Object.keys(this.props.contacts).map((key) => {
-                    console.log(this.props.contacts);
                     return (
                         <Contact
                             show={() => {
