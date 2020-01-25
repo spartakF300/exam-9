@@ -17,7 +17,9 @@ useEffect(()=>{
     }
 },[]);
 const defaultImg = 'https://img.favpng.com/7/5/8/computer-icons-font-awesome-user-font-png-favpng-YMnbqNubA7zBmfa13MK8WdWs8.jpg';
-
+    const changeHandler = (e)=>{
+        setValue({...value,[e.target.name]: e.target.value })
+    };
     return (
         <div>
         <Modal  isOpen={props.modal} modalTransition={{timeout: 700}} backdropTransition={{timeout: 1300}}
